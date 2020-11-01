@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from './Statistics.module.css'
+import PropTypes from 'prop-types'
 
 const Statistics = ({ good, neutral, bad, goodState, neutralState, badState }) => {
     let total = good + neutral + bad
@@ -28,5 +29,14 @@ const Statistics = ({ good, neutral, bad, goodState, neutralState, badState }) =
         </section>
     );
 };
+
+Statistics.propsTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  goodState: PropTypes.func.isRequired,
+  neutrelState: PropTypes.func.isRequired,
+  badState: PropTypes.func.isRequired,
+}
 
 export default Statistics

@@ -27,7 +27,7 @@ class App extends Component {
       bad: prevState.bad + 1
     }))
   }
-  
+
   render() {
     return (
       <>
@@ -35,7 +35,6 @@ class App extends Component {
           good={this.state.good}
           neutral={this.state.neutral}
           bad={this.state.bad}
-          setValue={this.setValue}
           goodState={this.goodState}
           neutralState={this.neutralState}
           badState={this.badState}
