@@ -30,12 +30,12 @@ const Statistics = ({ good, neutral, bad, goodState, neutralState, badState }) =
     );
 };
 
-Statistics.propsTypes = {
+Statistics.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
   goodState: PropTypes.func.isRequired,
-  neutrelState: PropTypes.func.isRequired,
+  neutralState: PropTypes.func.isRequired,
   badState: PropTypes.func.isRequired,
 }
 
